@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Development|Win32">
+      <Configuration>Development</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development|x64">
+      <Configuration>Development</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Public|Win32">
+      <Configuration>Public</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Public|x64">
+      <Configuration>Public</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{88943F74-84B6-4D71-90A0-C8BE2E2B6F24}</ProjectGuid>
+    <RootNamespace>ijl15</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Public|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Public|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27924.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <IncludePath>C:\Users\Annyeong\Documents\Visual Studio 2017\Libraries\boost_1_62_0;$(IncludePath)</IncludePath>
+    <TargetName>Mss32</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <IncludePath>C:\Users\Annyeong\Documents\Visual Studio 2017\Libraries\boost_1_62_0;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <IncludePath>C:\Users\Annyeong\Documents\Visual Studio 2017\Libraries\boost_1_62_0;$(IncludePath)</IncludePath>
+    <TargetName>Mss32</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <IncludePath>C:\Users\Annyeong\Documents\Visual Studio 2017\Libraries\boost_1_62_0;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Public|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Annyeong\Documents\Visual Studio 2017\Libraries\boost_1_62_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_PUBLIC;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>ijl15.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Public|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Annyeong\Documents\Visual Studio 2017\Libraries\boost_1_62_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_PUBLIC;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>ijl15.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Development|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_PUBLIC;_WINDOWS;_USRDLL;DEV_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>ijl15.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_PUBLIC;_WINDOWS;_USRDLL;DEV_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>ijl15.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Addr.cpp" />
+    <ClCompile Include="source\FileSystem.cpp" />
+    <ClCompile Include="source\MSSHook.cpp" />
+    <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="source\MemoryPatch.cpp" />
+    <ClCompile Include="source\ModifyWindow.cpp" />
+    <ClCompile Include="source\patchers\MasterPatcher.cpp" />
+    <ClCompile Include="source\patchers\Patcher_CombatMasterySwap.cpp" />
+    <ClCompile Include="source\patchers\Patcher_DefaultRangedSwap.cpp" />
+    <ClCompile Include="source\patchers\Patcher_DisableCloudRender.cpp" />
+    <ClCompile Include="source\patchers\Patcher_DisableFlashyDyes.cpp" />
+    <ClCompile Include="source\patchers\Patcher_DisableScreenShake.cpp" />
+    <ClCompile Include="source\patchers\Patcher_EnableMinimapZoom.cpp" />
+    <ClCompile Include="source\patchers\Patcher_EnableNakedMode.cpp" />
+    <ClCompile Include="source\patchers\Patcher_EnableNPCEquipView.cpp" />
+    <ClCompile Include="source\patchers\Patcher_EnableTTF.cpp" />
+    <ClCompile Include="source\patchers\Patcher_FarDiceThrow.cpp" />
+    <ClCompile Include="source\patchers\Patcher_FasterInterfaceWindows.cpp" />
+    <ClCompile Include="source\patchers\Patcher_MeditationPatch.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ModifyFontSize.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ModifyRenderDistance.cpp" />
+    <ClCompile Include="source\patchers\Patcher_PartyBoardToHousing.cpp" />
+    <ClCompile Include="source\patchers\Patcher_.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Development|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Development|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Public|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Public|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_BlockEndingAds.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ClearDungeonFog.cpp" />
+    <ClCompile Include="source\patchers\Patcher_DetectUnpack.cpp" />
+    <ClCompile Include="source\patchers\Patcher_DisableGrayFog.cpp" />
+    <ClCompile Include="source\patchers\Patcher_DisableNighttime.cpp" />
+    <ClCompile Include="source\patchers\Patcher_DisableSunlightGlare.cpp" />
+    <ClCompile Include="source\patchers\Patcher_DisplayNamesFar.cpp" />
+    <ClCompile Include="source\patchers\Patcher_EnableCutsceneSkip.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ItemSplitQuantity.cpp" />
+    <ClCompile Include="source\patchers\Patcher_NoChannelPenaltyMsg.cpp" />
+    <ClCompile Include="source\patchers\Patcher_NoMountTimeout.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ShowClockMinutes.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ElfLagFix.cpp" />
+    <ClCompile Include="source\patchers\Patcher_EnableFSAA.cpp" />
+    <ClCompile Include="source\patchers\Patcher_EnableNameColoring.cpp" />
+    <ClCompile Include="source\patchers\Patcher_EnableSelfRightClick.cpp" />
+    <ClCompile Include="source\patchers\Patcher_EnterRemoteShop.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ExtraThreads.cpp" />
+    <ClCompile Include="source\patchers\Patcher_HackShield.cpp" />
+    <ClCompile Include="source\patchers\Patcher_LargeClockText.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ModifyZoomLimit.cpp" />
+    <ClCompile Include="source\patchers\Patcher_MoveToSameChannel.cpp" />
+    <ClCompile Include="source\patchers\Patcher_MoveWhileTalking.cpp" />
+    <ClCompile Include="source\patchers\Patcher_RemoveLoginDelay.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ScreenshotQuality.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ShowCombatPower.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ShowDetailedFPS.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ShowExplorationPercent.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ShowItemID.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ShowItemPrice.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ShowNegativeHP.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ShowNegativeStats.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ShowPoisonDurability.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ShowSimpleFPS.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ShowTrueDurability.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ShowTrueFoodQuality.cpp" />
+    <ClCompile Include="source\patchers\Patcher_ShowTrueHP.cpp" />
+    <ClCompile Include="source\patchers\Patcher_StayAsAlchemyGolem.cpp" />
+    <ClCompile Include="source\patchers\Patcher_TalkToUnequippedEgo.cpp" />
+    <ClCompile Include="source\patchers\Patcher_TargetProps.cpp" />
+    <ClCompile Include="source\patchers\Patcher_TargetRestingEnemies.cpp" />
+    <ClCompile Include="source\patchers\Patcher_TimeAlarm.cpp" />
+    <ClCompile Include="source\patchers\Patcher_UseBitmapFonts.cpp" />
+    <ClCompile Include="source\patchers\Patcher_UseDataFolder.cpp" />
+    <ClCompile Include="source\patchers\Patcher_UserCommands.cpp" />
+    <ClCompile Include="source\patchers\Patcher_WindowPosition.cpp" />
+    <ClCompile Include="source\patchers\Patcher_NoChannelMoveDenial.cpp" />
+    <ClCompile Include="source\patchers\Patcher_UncapAutoProduction.cpp" />
+    <ClCompile Include="source\ThreadWatch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="source\Addr.h" />
+    <ClInclude Include="source\FileSystem.h" />
+    <ClInclude Include="source\MSSHook.h" />
+    <ClInclude Include="source\Main.h" />
+    <ClInclude Include="source\MemoryPatch.h" />
+    <ClInclude Include="source\ModifyWindow.h" />
+    <ClInclude Include="source\patchers\GenericPatcher.h" />
+    <ClInclude Include="source\patchers\MasterPatcher.h" />
+    <CustomBuild Include="source\patchers\Patcher_.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Development|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Development|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Public|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Public|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="source\patchers\Patcher_BlockEndingAds.h" />
+    <ClInclude Include="source\patchers\Patcher_ClearDungeonFog.h" />
+    <ClInclude Include="source\patchers\Patcher_CombatMasterySwap.h" />
+    <ClInclude Include="source\patchers\Patcher_DefaultRangedSwap.h" />
+    <ClInclude Include="source\patchers\Patcher_DetectUnpack.h" />
+    <ClInclude Include="source\patchers\Patcher_DisableCloudRender.h" />
+    <ClInclude Include="source\patchers\Patcher_DisableFlashyDyes.h" />
+    <ClInclude Include="source\patchers\Patcher_DisableGrayFog.h" />
+    <ClInclude Include="source\patchers\Patcher_DisableNighttime.h" />
+    <ClInclude Include="source\patchers\Patcher_DisableScreenShake.h" />
+    <ClInclude Include="source\patchers\Patcher_DisableSunlightGlare.h" />
+    <ClInclude Include="source\patchers\Patcher_DisplayNamesFar.h" />
+    <ClInclude Include="source\patchers\Patcher_EnableCutsceneSkip.h" />
+    <ClInclude Include="source\patchers\Patcher_EnableMinimapZoom.h" />
+    <ClInclude Include="source\patchers\Patcher_EnableNakedMode.h" />
+    <ClInclude Include="source\patchers\Patcher_EnableNPCEquipView.h" />
+    <ClInclude Include="source\patchers\Patcher_EnableTTF.h" />
+    <ClInclude Include="source\patchers\Patcher_FarDiceThrow.h" />
+    <ClInclude Include="source\patchers\Patcher_FasterInterfaceWindows.h" />
+    <ClInclude Include="source\patchers\Patcher_ItemSplitQuantity.h" />
+    <ClInclude Include="source\patchers\Patcher_MeditationPatch.h" />
+    <ClInclude Include="source\patchers\Patcher_ModifyRenderDistance.h" />
+    <ClInclude Include="source\patchers\Patcher_NoChannelPenaltyMsg.h" />
+    <ClInclude Include="source\patchers\Patcher_NoMountTimeout.h" />
+    <ClInclude Include="source\patchers\Patcher_PartyBoardToHousing.h" />
+    <ClInclude Include="source\patchers\Patcher_ShowClockMinutes.h" />
+    <ClInclude Include="source\patchers\Patcher_ElfLagFix.h" />
+    <ClInclude Include="source\patchers\Patcher_EnableFSAA.h" />
+    <ClInclude Include="source\patchers\Patcher_EnableNameColoring.h" />
+    <ClInclude Include="source\patchers\Patcher_EnableSelfRightClick.h" />
+    <ClInclude Include="source\patchers\Patcher_EnterRemoteShop.h" />
+    <ClInclude Include="source\patchers\Patcher_ExtraThreads.h" />
+    <ClInclude Include="source\patchers\Patcher_HackShield.h" />
+    <ClInclude Include="source\patchers\Patcher_LargeClockText.h" />
+    <ClInclude Include="source\patchers\Patcher_ModifyZoomLimit.h" />
+    <ClInclude Include="source\patchers\Patcher_MoveToSameChannel.h" />
+    <ClInclude Include="source\patchers\Patcher_MoveWhileTalking.h" />
+    <ClInclude Include="source\patchers\Patcher_RemoveLoginDelay.h" />
+    <ClInclude Include="source\patchers\Patcher_ScreenshotQuality.h" />
+    <ClInclude Include="source\patchers\Patcher_ShowCombatPower.h" />
+    <ClInclude Include="source\patchers\Patcher_ShowDetailedFPS.h" />
+    <ClInclude Include="source\patchers\Patcher_ShowExplorationPercent.h" />
+    <ClInclude Include="source\patchers\Patcher_ShowItemID.h" />
+    <ClInclude Include="source\patchers\Patcher_ShowItemPrice.h" />
+    <ClInclude Include="source\patchers\Patcher_ShowNegativeHP.h" />
+    <ClInclude Include="source\patchers\Patcher_ShowNegativeStats.h" />
+    <ClInclude Include="source\patchers\Patcher_ShowPoisonDurability.h" />
+    <ClInclude Include="source\patchers\Patcher_ShowSimpleFPS.h" />
+    <ClInclude Include="source\patchers\Patcher_ShowTrueDurability.h" />
+    <ClInclude Include="source\patchers\Patcher_ShowTrueFoodQuality.h" />
+    <ClInclude Include="source\patchers\Patcher_ShowTrueHP.h" />
+    <ClInclude Include="source\patchers\Patcher_StayAsAlchemyGolem.h" />
+    <ClInclude Include="source\patchers\Patcher_TalkToUnequippedEgo.h" />
+    <ClInclude Include="source\patchers\Patcher_TargetProps.h" />
+    <ClInclude Include="source\patchers\Patcher_TargetRestingEnemies.h" />
+    <ClInclude Include="source\patchers\Patcher_TimeAlarm.h" />
+    <ClInclude Include="source\patchers\Patcher_UncapAutoProduction.h" />
+    <ClInclude Include="source\patchers\Patcher_UseBitmapFonts.h" />
+    <ClInclude Include="source\patchers\Patcher_UseDataFolder.h" />
+    <ClInclude Include="source\patchers\Patcher_UserCommands.h" />
+    <ClInclude Include="source\patchers\Patcher_WindowPosition.h" />
+    <ClInclude Include="source\patchers\Patcher_NoChannelMoveDenial.h" />
+    <ClInclude Include="source\patchers\Patcher_ModifyFontSize.h" />
+    <ClInclude Include="source\Singleton.h" />
+    <ClInclude Include="source\ThreadWatch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ijl15.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="mabi_icon_1.ico" />
+    <Image Include="mabi_icon_2.ico" />
+    <Image Include="mabi_icon_3.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

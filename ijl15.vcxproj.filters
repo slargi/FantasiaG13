@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source files\Patch Functions">
+      <UniqueIdentifier>{41a2904c-c631-43b8-bd99-1acc68226b7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header files\Patchers">
+      <UniqueIdentifier>{4d8deb25-cf59-44e2-8798-102c78260f8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Addr.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\FileSystem.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Main.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MemoryPatch.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ModifyWindow.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ThreadWatch.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\MasterPatcher.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_BlockEndingAds.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ClearDungeonFog.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_DisableNighttime.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_EnableFSAA.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_EnableNameColoring.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_EnableSelfRightClick.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_EnterRemoteShop.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ExtraThreads.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_HackShield.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_LargeClockText.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ModifyZoomLimit.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_MoveToSameChannel.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_MoveWhileTalking.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_RemoveLoginDelay.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ScreenshotQuality.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ShowCombatPower.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ShowExplorationPercent.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ShowItemPrice.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ShowTrueDurability.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ShowTrueFoodQuality.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_TalkToUnequippedEgo.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_TargetProps.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_UseBitmapFonts.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_UseDataFolder.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_DetectUnpack.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ElfLagFix.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_WindowPosition.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ShowNegativeHP.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ShowNegativeStats.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ShowClockMinutes.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_NoMountTimeout.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_NoChannelPenaltyMsg.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_NoChannelMoveDenial.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_EnableCutsceneSkip.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_TargetRestingEnemies.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_DisplayNamesFar.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_DisableSunlightGlare.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_DisableGrayFog.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ShowDetailedFPS.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ShowSimpleFPS.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ItemSplitQuantity.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_PartyBoardToHousing.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_DefaultRangedSwap.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_UncapAutoProduction.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ModifyRenderDistance.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_FarDiceThrow.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_StayAsAlchemyGolem.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_DisableScreenShake.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_EnableNakedMode.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_DisableCloudRender.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ShowPoisonDurability.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ShowTrueHP.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ShowItemID.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_TimeAlarm.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_DisableFlashyDyes.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_EnableNPCEquipView.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_EnableMinimapZoom.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_CombatMasterySwap.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_UserCommands.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_MeditationPatch.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_EnableTTF.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_ModifyFontSize.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\patchers\Patcher_FasterInterfaceWindows.cpp">
+      <Filter>Source files\Patch Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MSSHook.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Addr.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\FileSystem.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Main.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MemoryPatch.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ModifyWindow.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Singleton.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ThreadWatch.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\GenericPatcher.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\MasterPatcher.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_BlockEndingAds.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ClearDungeonFog.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_DisableNighttime.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_EnableFSAA.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_EnableNameColoring.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_EnableSelfRightClick.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_EnterRemoteShop.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ExtraThreads.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_HackShield.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_LargeClockText.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ModifyZoomLimit.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_MoveToSameChannel.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_MoveWhileTalking.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_RemoveLoginDelay.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ScreenshotQuality.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ShowCombatPower.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ShowExplorationPercent.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ShowItemPrice.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ShowTrueDurability.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ShowTrueFoodQuality.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_TalkToUnequippedEgo.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_TargetProps.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_UseBitmapFonts.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_UseDataFolder.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_DetectUnpack.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ElfLagFix.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_WindowPosition.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ShowNegativeHP.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ShowNegativeStats.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ShowClockMinutes.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_NoMountTimeout.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_NoChannelPenaltyMsg.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_NoChannelMoveDenial.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_EnableCutsceneSkip.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_TargetRestingEnemies.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_DisplayNamesFar.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_DisableSunlightGlare.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_DisableGrayFog.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_PartyBoardToHousing.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ShowDetailedFPS.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ShowSimpleFPS.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ItemSplitQuantity.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_DefaultRangedSwap.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_UncapAutoProduction.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ModifyRenderDistance.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_FarDiceThrow.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_StayAsAlchemyGolem.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_DisableScreenShake.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_EnableNakedMode.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_DisableCloudRender.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ShowPoisonDurability.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ShowTrueHP.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ShowItemID.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_TimeAlarm.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_DisableFlashyDyes.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_EnableNPCEquipView.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_EnableMinimapZoom.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_CombatMasterySwap.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_UserCommands.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_MeditationPatch.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_EnableTTF.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_ModifyFontSize.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\patchers\Patcher_FasterInterfaceWindows.h">
+      <Filter>Header files\Patchers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MSSHook.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ijl15.rc">
+      <Filter>Resource files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="mabi_icon_1.ico">
+      <Filter>Resource files</Filter>
+    </Image>
+    <Image Include="mabi_icon_2.ico">
+      <Filter>Resource files</Filter>
+    </Image>
+    <Image Include="mabi_icon_3.ico">
+      <Filter>Resource files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="source\patchers\Patcher_.h">
+      <Filter>Header files\Patchers</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

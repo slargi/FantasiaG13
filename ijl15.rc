@@ -1,0 +1,260 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "windows.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1
+ PRODUCTVERSION 1
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Fantasia Patch by Annyeong"
+            VALUE "FileDescription", "Mabinogi Fantasia Patch by spr33; modified by Annyeong"
+            VALUE "FileVersion", "1"
+            VALUE "InternalName", "mss32"
+            VALUE "LegalCopyright", "Copyright (C) spr33 2009, chris & syoka 2008"
+            VALUE "OriginalFilename", "mss32.dll"
+            VALUE "ProductName", "Fantasia patch by Annyeong"
+            VALUE "ProductVersion", "1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_FANTASIA_MENU MENU 
+BEGIN
+    POPUP "Fantasia Patch"
+    BEGIN
+		POPUP "Set Thread Priority"
+		BEGIN
+			MENUITEM "Realtime",						ID_PRIORITY_REALTIME
+			MENUITEM "High",							ID_PRIORITY_HIGH
+			MENUITEM "Above Normal",					ID_PRIORITY_ABOVE_NORMAL
+			MENUITEM "Normal",							ID_PRIORITY_NORMAL
+			MENUITEM "Below Normal",					ID_PRIORITY_BELOW_NORMAL
+			MENUITEM "Low",								ID_PRIORITY_LOW
+			MENUITEM "Idle",							ID_PRIORITY_IDLE
+		END
+        POPUP "CPU Limiter"
+        BEGIN
+            MENUITEM "Only limit while minimized",		ID_CPUMENU_WHILEMINIMIZED
+            MENUITEM SEPARATOR
+            MENUITEM "- 90% CPU Usage",					ID_CPUMENU_90
+            MENUITEM "- 80% CPU Usage",					ID_CPUMENU_80
+            MENUITEM "- 70% CPU Usage",					ID_CPUMENU_70
+            MENUITEM "- 60% CPU Usage",					ID_CPUMENU_60
+            MENUITEM "- 50% CPU Usage",					ID_CPUMENU_50
+            MENUITEM "- 40% CPU Usage",					ID_CPUMENU_40
+            MENUITEM "- 30% CPU Usage",					ID_CPUMENU_30
+            MENUITEM "- 20% CPU Usage",					ID_CPUMENU_20
+            MENUITEM "- 10% CPU Usage",					ID_CPUMENU_10
+            MENUITEM "Disabled",						ID_CPUMENU_OFF
+        END
+        POPUP "Toggle Mods"
+        BEGIN
+			POPUP "Gameplay Mods"
+			BEGIN
+				MENUITEM "Target Props",				ID_TOGGLE_TARGETPROPS
+				MENUITEM "Target Resting Enemies",		ID_TOGGLE_TARGETRESTINGENEMIES
+				MENUITEM "Enable Elf Lag Fix",			ID_TOGGLE_ELFLAGFIX
+				MENUITEM "No Mount Timeout",			ID_TOGGLE_NOMOUNTTIMEOUT
+				MENUITEM "Far Dice Throw",				ID_TOGGLE_FARDICETHROW
+				MENUITEM "Stay as Alchemy Golem",		ID_TOGGLE_STAYASALCHEMYGOLEM
+				MENUITEM "Combat Mastery Swap",			ID_TOGGLE_COMBATMASTERYSWAP
+			END
+			POPUP "Graphic Mods"
+			BEGIN
+				MENUITEM "Enable TTF",					ID_TOGGLE_ENABLETTF
+				MENUITEM "Clear Dungeon Fog",			ID_TOGGLE_CLEARDUNGEONFOG
+				MENUITEM "Disable Cloud Render",		ID_TOGGLE_DISABLECLOUDRENDER
+				MENUITEM "Disable Flashy Dyes",			ID_TOGGLE_DISABLEFLASHYDYES
+				MENUITEM "Disable Nighttime",			ID_TOGGLE_DISABLENIGHTTIME
+				MENUITEM "Disable Gray Fog",			ID_TOGGLE_DISABLEGRAYFOG
+				MENUITEM "Disable Sunlight Glare",		ID_TOGGLE_DISABLESUNLIGHTGLARE
+				MENUITEM "Enable Naked Mode",			ID_TOGGLE_ENABLENAKEDMODE
+			END
+			POPUP "Hidden Value Mods"
+			BEGIN
+				MENUITEM "Show Combat Power",			ID_TOGGLE_SHOWCOMBATPOWER
+				MENUITEM "Show Max HP",					ID_TOGGLE_SHOWMAXHP
+				MENUITEM "Show Exploration Percent",	ID_TOGGLE_SHOWEXPLORATIONPERCENT
+				MENUITEM "Show Item ID",				ID_TOGGLE_SHOWITEMID
+				MENUITEM "Show Item Price",				ID_TOGGLE_SHOWITEMPRICE
+				MENUITEM "Show True Durability",		ID_TOGGLE_SHOWTRUEDURABILITY
+				MENUITEM "Show Item Color Codes",		ID_TOGGLE_SHOWITEMCOLOR
+				MENUITEM "Show Poison Durability",		ID_TOGGLE_SHOWPOISONDURABILITY
+				MENUITEM "Show True Food Quality",		ID_TOGGLE_SHOWTRUEFOODQUALITY
+				MENUITEM "Show Negative HP",			ID_TOGGLE_SHOWNEGATIVEHP
+				MENUITEM "Show True HP",				ID_TOGGLE_SHOWTRUEHP
+				MENUITEM "Show Negative Stats",			ID_TOGGLE_SHOWNEGATIVESTATS
+				MENUITEM "Show Clock Minutes",			ID_TOGGLE_SHOWCLOCKMINUTES
+				MENUITEM "Show Simple FPS",				ID_TOGGLE_SHOWSIMPLEFPS
+				MENUITEM "Show Detailed FPS",			ID_TOGGLE_SHOWDETAILEDFPS
+			END
+			POPUP "Misc."
+			BEGIN
+				MENUITEM "Block Ending Ads",            ID_TOGGLE_BLOCKENDINGADS
+				MENUITEM "Enable Name Coloring",        ID_TOGGLE_ENABLENAMECOLORING
+				MENUITEM "Enable Self Right-Click",     ID_TOGGLE_ENABLESELFRIGHTCLICK
+				MENUITEM "Enable Cutscene Skip",		ID_TOGGLE_ENABLECUTSCENESKIP
+				MENUITEM "Enter Remote Shop",           ID_TOGGLE_ENTERREMOTESHOP
+				MENUITEM "Enable NPC Equip View",		ID_TOGGLE_ENABLENPCEQUIPVIEW
+				MENUITEM "Enable Minimap Zoom",			ID_TOGGLE_ENABLEMINIMAPZOOM
+				MENUITEM "Enable User Commands",		ID_TOGGLE_ENABLEUSERCOMMANDS
+				MENUITEM "Faster Interface Windows",	ID_TOGGLE_FASTERINTERFACEWINDOWS
+				MENUITEM "Large Clock Text",            ID_TOGGLE_LARGECLOCKTEXT
+				MENUITEM "Move While Talking",			ID_TOGGLE_MOVEWHILETALKING
+				MENUITEM "Party Board To Housing",		ID_TOGGLE_PARTYBOARDTOHOUSING
+				MENUITEM "Remove Login Delay",			ID_TOGGLE_REMOVELOGINDELAY
+				MENUITEM "Talk To Unequipped Ego",		ID_TOGGLE_TALKTOUNEQUIPPEDEGO
+				MENUITEM "Use Bitmap Fonts",			ID_TOGGLE_USEBITMAPFONTS
+				MENUITEM "Disable Data Folder",			ID_TOGGLE_USEDATAFOLDER
+				MENUITEM "No Channel Penalty Msg",		ID_TOGGLE_NOCHANNELPENALTYMSG
+				MENUITEM "No Channel Move Denial",		ID_TOGGLE_NOCHANNELMOVEDENIAL
+				MENUITEM "Display Names From Far",		ID_TOGGLE_DISPLAYNAMESFAR
+				MENUITEM "Uncap Auto-Production",		ID_TOGGLE_UNCAPAUTOPRODUCTION
+				MENUITEM "Disable Screen Shake",		ID_TOGGLE_DISABLESCREENSHAKE
+			END
+			POPUP "Set Font Size"
+			BEGIN
+				MENUITEM "20",							ID_FONTSIZE_20
+				MENUITEM "18",							ID_FONTSIZE_18
+				MENUITEM "16",							ID_FONTSIZE_16
+				MENUITEM "14",							ID_FONTSIZE_14
+				MENUITEM "12",							ID_FONTSIZE_12
+				MENUITEM "10",							ID_FONTSIZE_10
+			END
+			POPUP "Modify Render Distance"
+			BEGIN
+				MENUITEM "Default",						ID_RENDERDISTANCE_DEFAULT
+				MENUITEM SEPARATOR
+				MENUITEM "100000",						ID_RENDERDISTANCE_100000
+				MENUITEM "75000",						ID_RENDERDISTANCE_75000
+				MENUITEM "50000",						ID_RENDERDISTANCE_50000
+				MENUITEM "25000",						ID_RENDERDISTANCE_25000
+				MENUITEM "10000",						ID_RENDERDISTANCE_10000
+				MENUITEM "5000",						ID_RENDERDISTANCE_5000
+			END
+			POPUP "Default Ranged Swap"
+			BEGIN
+				MENUITEM "Ranged Attack",				ID_RANGEDSWAP_DEFAULT
+				MENUITEM "Magnum",						ID_RANGEDSWAP_MAGNUM
+				MENUITEM "Mari's Arrow Revolver",		ID_RANGEDSWAP_MARIAR
+				MENUITEM "Arrow Revolver",				ID_RANGEDSWAP_AR
+				MENUITEM "Support Shot",				ID_RANGEDSWAP_SUPPORT
+				MENUITEM "Mirage Missile",				ID_RANGEDSWAP_MIRAGE
+				MENUITEM "Crash Shot",					ID_RANGEDSWAP_CRASH
+			END
+			POPUP "Set Item Split Quantity"
+			BEGIN
+				MENUITEM "10",							ID_ITEMQUANTITY_10
+				MENUITEM "5",							ID_ITEMQUANTITY_5
+				MENUITEM "1",							ID_ITEMQUANTITY_1
+			END
+            POPUP "Screenshot Quality"
+            BEGIN
+                MENUITEM "100",                         ID_SSQUALITY_100
+                MENUITEM "90",                          ID_SSQUALITY_90
+                MENUITEM "75",                          ID_SSQUALITY_75
+                MENUITEM "50",                          ID_SSQUALITY_50
+            END
+        END
+        MENUITEM "Save settings to INI",				ID_SAVESETTINGS
+		MENUITEM "Reload INI settings",					ID_RELOADSETTINGS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_ORANGE         ICON                    ".\\mabi_icon_1.ico"
+IDI_ICON_BLACK          ICON                    ".\\mabi_icon_2.ico"
+IDI_ICON_BLUE           ICON                    ".\\mabi_icon_3.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
